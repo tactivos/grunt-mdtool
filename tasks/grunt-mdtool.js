@@ -3,8 +3,11 @@
  * https://github.com/tactivos/grunt-mdtool
  * Copyright (c) 2014 Juli Racca, Santiago Montero & Johnny Halife
  */
+
+var path = require('path');
+
 module.exports = function(grunt) {
-  grunt.registerMultiTask('mdbuild', 'Builds a MonoDevelop Solution', function() {
+  grunt.registerMultiTask('mdtool', 'Builds a MonoDevelop Solution', function() {
     var _ = grunt.util._;
     var done = this.async();
     var async = grunt.util.async;
